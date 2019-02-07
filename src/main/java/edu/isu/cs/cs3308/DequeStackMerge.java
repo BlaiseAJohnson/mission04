@@ -27,12 +27,30 @@ public class DequeStackMerge {
          * This implementation will take advantage of the fact that a deck can be used
          * as a double stack.
          *
-         * OfferFirst and Poll will be used to manipulate one end of the deque, while
-         * Offer and Poll
+         * OfferFirst and Poll will be used to manipulate one end of the deque (into), while
+         * Offer and PollLast will be used to manipulate the other (from), and neither will be
+         * allowed to intersect each other (this is assured by the fields intoSize and
+         * fromSize).
          */
 
         while (!into.isEmpty()) {
+            deque.offerFirst(into.pop());
+            intoSize++;
+        }
 
+        while (!from.isEmpty()) {
+            deque.offer(from.pop());
+            fromSize++;
+        }
+
+        while (fromSize > 0) {
+            into.push(deque.pollLast());
+            fromSize--;
+        }
+
+        while (intoSize > 0) {
+            into.push(deque.poll());
+            intoSize--;
         }
     }
 }

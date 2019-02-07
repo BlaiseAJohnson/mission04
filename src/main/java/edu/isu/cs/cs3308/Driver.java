@@ -38,7 +38,7 @@ public class Driver {
         deque.printQueue();
 
         System.out.println("\n");
-        System.out.println("Transfered:");
+        System.out.println("Transferred:");
         Deque<String> temp = new LinkedDeque<>();
         deque.transfer(temp);
         temp.printQueue();
@@ -46,6 +46,7 @@ public class Driver {
         System.out.println("\n");
         System.out.println("Merged Back:");
         deque.merge(temp);
+        temp.printQueue();
 
         System.out.println("\n");
         Stack<Integer> stack1 = new LinkedStack<>();
@@ -64,7 +65,7 @@ public class Driver {
         DequeStackMerge.dequeStackMerge(stack1, stack2);
         stack1.printStack();
 
-        System.out.println("\nDestack:");
+        System.out.println("\nDe-stack:");
         RedBlueDoubleStack<Integer> redBlue = new RedBlueDoubleStackImpl<>();
 
         redBlue.pushBlue(1);
