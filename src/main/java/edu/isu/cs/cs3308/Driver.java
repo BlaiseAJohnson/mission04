@@ -2,10 +2,10 @@ package edu.isu.cs.cs3308;
 
 import edu.isu.cs.cs3308.structures.Deque;
 import edu.isu.cs.cs3308.structures.Stack;
+import edu.isu.cs.cs3308.structures.RedBlueDoubleStack;
 import edu.isu.cs.cs3308.structures.impl.LinkedDeque;
 import edu.isu.cs.cs3308.structures.impl.LinkedStack;
 import edu.isu.cs.cs3308.structures.impl.RedBlueDoubleStackImpl;
-import edu.isu.cs.cs3308.structures.RedBlueDoubleStack;
 
 /**
  *

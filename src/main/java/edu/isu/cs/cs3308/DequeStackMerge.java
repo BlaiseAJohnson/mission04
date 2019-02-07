@@ -1,6 +1,5 @@
 package edu.isu.cs.cs3308;
 
-import edu.isu.cs.cs3308.structures.Deque;
 import edu.isu.cs.cs3308.structures.Stack;
 import edu.isu.cs.cs3308.structures.impl.LinkedDeque;
 
@@ -20,6 +19,20 @@ public class DequeStackMerge {
      * @param from Stack which is merged into the bottom of the other stack.
      */
     public static <E> void dequeStackMerge(final Stack<E> into, Stack<E> from) {
-        throw new UnsupportedOperationException("Not Yet Implemented");
+        LinkedDeque<E> deque = new LinkedDeque<>();
+        int intoSize = 0;
+        int fromSize = 0;
+
+        /*
+         * This implementation will take advantage of the fact that a deck can be used
+         * as a double stack.
+         *
+         * OfferFirst and Poll will be used to manipulate one end of the deque, while
+         * Offer and Poll
+         */
+
+        while (!into.isEmpty()) {
+
+        }
     }
 }

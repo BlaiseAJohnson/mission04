@@ -1,11 +1,11 @@
 package edu.isu.cs.cs3308.structures;
 
 /**
- * RedBlueDoubleStack is a Doubly Ended Stack that has two colors representing the
+ * RedBlueDoubleStackImpl is a Doubly Ended Stack that has two colors representing the
  * ends. Red is the top of the DeStack and Blue is the Bottom.
  *
  * @author Isaac Griffith
- * @param <E> The Type of element stored in the RedBlueDoubleStack.
+ * @param <E> The Type of element stored in the RedBlueDoubleStackImpl.
  */
 public interface RedBlueDoubleStack<E> {
 
