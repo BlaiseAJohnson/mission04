@@ -109,7 +109,7 @@ public class LinkedDeque<E> implements Deque<E> {
         if (into == null) return;
 
         while (!this.isEmpty()) {
-            into.offer(this.poll());
+            into.offer(this.pollLast());
         }
     }
 
@@ -146,7 +146,7 @@ public class LinkedDeque<E> implements Deque<E> {
         while (!from.isEmpty()) {
             E element = from.poll();
             this.offer(element);
-            temp.offer(element);
+            temp.offerFirst(element);
         }
 
         temp.transfer(from);
